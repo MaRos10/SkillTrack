@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav */
+.navLink {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* Home */
+
+/* Skills - site */
