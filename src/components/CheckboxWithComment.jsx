@@ -23,14 +23,14 @@ export default function CheckboxWithComment({ label, defaultChecked }) {
   };
 
   return (
-    <section ref={checkboxRef}>
-      <label>
+    <section className="subject" ref={checkboxRef}>
+      <label className="toLearn">
         <input
           type="checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        {label}
+        <span className="labelText">{label}</span>
       </label>
       <textarea
         value={comment}

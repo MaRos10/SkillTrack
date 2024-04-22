@@ -51,15 +51,22 @@ export default function React() {
   return (
     <>
       <h1>React</h1>
-      <section>
+      <section className="allSubjects">
         {defaultSubjects.map((subject, index) => (
-          <div key={index}>
+          <div className="singleSubject" key={index}>
             <CheckboxWithComment label={subject} defaultChecked={false} />
-            <button onClick={() => handleRemoveSubject(index)}>Ta bort</button>
+            <div className="removeBtnWrapper">
+              <button
+                className="removeBtn"
+                onClick={() => handleRemoveSubject(index)}
+              >
+                Ta bort
+              </button>
+            </div>
           </div>
         ))}
         <div ref={lastCheckboxRef}></div>
-        <section>
+        <section className="addSubject">
           <input
             type="text"
             value={newSubject}
@@ -67,7 +74,9 @@ export default function React() {
             onKeyDown={handleKeyDown}
             placeholder="..."
           />
-          <button onClick={handleAddSubject}>Lägg till</button>
+          <button className="addBtn" onClick={handleAddSubject}>
+            Lägg till
+          </button>
         </section>
       </section>
     </>
