@@ -47,6 +47,16 @@ li {
 
 /* Home */
 
+.homeWrapper {
+  height: 100vh;
+  color: rgb(202, 207, 212);
+}
+
+.homeWrapper h1,
+.homeWrapper p {
+  text-align: center;
+}
+
 /* Skills - site */
 
 .subject {
